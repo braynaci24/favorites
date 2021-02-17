@@ -1,0 +1,80 @@
+body {
+  background-color: rgb(152, 182, 238);
+}
+.general-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.box {
+  width:200px;
+  padding: 16px 16px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow:1px 1px 30px 0px rgba(50, 50, 50, 0.68);
+  border-radius: 4px;
+  margin: 30px;
+}
+.box:hover {
+  box-shadow:1px 1px 30px 0px rgba(50, 50, 50, 1);
+}
+.box img {
+  height: 100%;
+  border-radius: 8px;
+}
+.click-fav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.check  {
+  color: #43ca96;
+}
+.times {
+  color: #ff7b50;
+}
+.click-fav a i {
+  font-size: 40px;
+}
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color:#f9f9f9;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	background-color:#e9e9e9;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 41px;
+  margin-top: 28px;
+}
+.fa-heart {
+  color: rgb(243, 170, 182);
+  padding-right: 10px;
+}
