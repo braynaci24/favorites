@@ -141,3 +141,8 @@ body {
   display: none;
   z-index: 1;
 }
+@media (max-width: 800px) {
+  .likes-container{
+    max-width: 83%;
+  }
+}
