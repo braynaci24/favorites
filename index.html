@@ -7,14 +7,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Favorites</title>
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="plugins/sweetalert2/sweetalert2.min.css">
+  <script src="plugins/sweetalert2/sweetalert2.all.min.js"></script>
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/main.js"></script>
 </head>
 
 <body>
   <div class="general-container">
+    <div class="likes-container">
+      <div class=" likes-container-header">
+        <span class="likes-header-title">PHOTOS I LIKED</span>
+        <i class="fas fa-times likes-header-icon"></i>
+      </div>
+      <div class="likes-container-body"></div>
+    </div>
     <div class="button-container">
       <a href="javascript:;" class="myButton"> <i class="fas fa-heart"></i>Likes<span class="likes-count"></span></a>
     </div>
@@ -237,6 +248,7 @@
     </div><!-- end of .box-container-->
 
   </div><!-- end of .general-container-->
+  <div class="backdrop"></div>
 </body>
 
 </html>

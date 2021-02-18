@@ -1,11 +1,64 @@
 body {
   background-color: rgb(152, 182, 238);
+  font-family: 'Roboto Condensed', sans-serif;
 }
 .general-container {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
-
+.likes-container {
+  width: 680px;
+  height: 490px;
+  background: #fff;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -350px;
+  margin-top: -300px;
+  display: none;
+  overflow-x: hidden; 
+  overflow-y: scroll;
+  z-index: 2;
+}
+.likes-container-body {
+  width: 660px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+.likes-img {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin: 10px 10px;
+  position: relative;
+}
+.likes-container-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+}
+.delete-img {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #fff;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.likes-header-title {
+  font-size: 25px;
+}
+.likes-header-icon {
+  cursor: pointer;
+  font-size: 25px;
+}
 .box-container {
   display: flex;
   justify-content: space-around;
@@ -77,4 +130,14 @@ body {
 .fa-heart {
   color: rgb(243, 170, 182);
   padding-right: 10px;
+}
+.backdrop {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1;
 }
